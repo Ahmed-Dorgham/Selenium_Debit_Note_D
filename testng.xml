@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="D:/.1_Automation  testing practise/_practice with intelliJ/Debite_Note">
+        <classes>
+            <class name="TestCases.Login_Test">
+                <methods>
+                    <include name="loginWithValidData"/>
+                </methods>
+            </class>
+            <class name="TestCases.SaveAndSubmitDebitNote_Test">
+                <methods>
+                    <include name="loginWithValidData"/>
+                    <include name="openDebitNotesListPage"/>
+                    <include name="createNewDebitNote"/>
+                </methods>
+            </class>
+            <class name="TestCases.SubmitAfterSavingDebitNote_Test">
+                <methods>
+                    <include name="loginWithValidData"/>
+                    <include name="openDebitNotesListPage"/>
+                    <include name="createNewDebitNote"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
